@@ -1,5 +1,5 @@
 <h1>🏋️AI POWERED WORKOUT RECOMMENDATION</h1><br>
-Smart workout recommendations using OpenAI LLMA(Groq) and Springboot</br>
+Smart workout recommendations using OpenAI LLAMA(Groq) and Springboot</br>
 <h2>overview</h2>
 <p> This AI workout recommendation Sytem helps users to approach their fitness goals while taking past injuries and limitations into consideration<br>
 <bold>OpenAI Llama from groq </bold>integrates <bold>Springboot</bold> for Backend and<bold>H2 </bold>as Database ,<bold> HTML,CSS</bold> for frontend to provide accurate fitness plan for users</p>
@@ -13,7 +13,7 @@ Smart workout recommendations using OpenAI LLMA(Groq) and Springboot</br>
   </tr>
   <tr> 
     <td>AI Model</td>
-    <td>Open AI LLaMa(Groq)</td>
+    <td>Open AI llama(Groq)</td>
   </tr>
   <tr> 
     <td>Backend</td>
