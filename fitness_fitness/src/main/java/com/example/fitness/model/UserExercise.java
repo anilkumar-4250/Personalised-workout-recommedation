@@ -9,24 +9,24 @@ public class UserExercise {
     private Long id;
 
     @Column(nullable = false, length = 50)
-    private String fitnessLevel;
+    private String fitnessLevelofuser;
 
     @Column(length = 1000)
-    private String exerciseDetails;
+    private String exerciseDetailsofuser;
 
     @Column(nullable = false, length = 500)
-    private String userGoals;
+    private String usersGoals;
 
     @Column(length = 1000)
-    private String injuryNotes;
+    private String injuryNotesandlimitations;
 
     public UserExercise() {}
 
     public UserExercise(String fitnessLevel, String exerciseDetails, String userGoals, String injuryNotes) {
-        this.fitnessLevel = fitnessLevel;
-        this.exerciseDetails = exerciseDetails;
-        this.userGoals = userGoals;
-        this.injuryNotes = injuryNotes;
+        this.fitnessLevelofuser = fitnessLevel;
+        this.exerciseDetailsofuser = exerciseDetails;
+        this.usersGoals = userGoals;
+        this.injuryNotesandlimitations = injuryNotes;
     }
 
     
