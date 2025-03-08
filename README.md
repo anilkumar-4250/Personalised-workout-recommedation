@@ -31,7 +31,8 @@ Smart workout recommendations using OpenAI LLAMA(Groq) and Springboot</br>
 <ul>
   <li>Smart Workout plans using AI</li>
   <li>Fast performance with in built h2 database</li>
-  <li> Fast performance eith SpringBoot as backend </li>
+  <li> Fast performance with SpringBoot as backend </li>
+  <li>Simple user friendly interface for easy interaction</li>
 </ul>
 <h2>Conclusion</h2>
 <p>Based on AI, it provides Smart plan with taking injuries and limitations into consideration</p>
