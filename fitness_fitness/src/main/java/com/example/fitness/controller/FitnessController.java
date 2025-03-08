@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/fitness")
-public class FitnessController {
+public class FitnesssController {
 
     @Autowired
     private UserExerciseRepository repository;
@@ -18,22 +18,24 @@ public class FitnessController {
     @Autowired
     private GroqService groqService;
 
+	private String userGoals;
+
     @GetMapping("/")
     public String showForm() {
         return "index";
     }
 
     @PostMapping("/recommend")
-    public String getRecommendations(@RequestParam String fitnessLevel,
-                                     @RequestParam String exerciseDetails,
-                                     @RequestParam String userGoals,
-                                     @RequestParam(required = false) String injuryNotes,
+    public String getRecommendations(@RequestParam String fitnessLevelofuser,
+                                     @RequestParam String exerciseDetailsofuser,
+                                     @RequestParam String usersGoals,
+                                     @RequestParam(required = false) String injuryNotesandlimitations,
                                      Model model) {
        
-        UserExercise userExercise = new UserExercise(fitnessLevel, exerciseDetails, userGoals, injuryNotes);
+        UserExercise userExercise = new UserExercise(fitnessLevelofuser, exerciseDetailsofuser, usersGoals, injuryNotesandlimitations);
         repository.save(userExercise);
         
-        String response = groqService.getWorkoutPlan(fitnessLevel, exerciseDetails, userGoals, injuryNotes);
+        String response = groqService.getWorkoutPlan(fitnessLevelofuser, exerciseDetailsofuser, usersGoals, injuryNotesandlimitations);
         model.addAttribute("response", response);
         return "result";
     }
