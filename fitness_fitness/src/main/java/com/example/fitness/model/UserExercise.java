@@ -22,7 +22,7 @@ public class UserExercise {
 
     public UserExercise() {}
 
-    public UserExercise(String fitnessLevelofuser, String exerciseDetailsofuser, String usersGoals, String injuryNotesandlimitations) {
+    public UserExercise(String fitnessLevel, String exerciseDetails, String userGoals, String injuryNotes) {
         this.fitnessLevelofuser = fitnessLevel;
         this.exerciseDetailsofuser = exerciseDetails;
         this.usersGoals = userGoals;
